@@ -13,7 +13,7 @@ var availableAgents = [
 
 var talks = [
   "Isn't this simply the most HIDEOUS website you've ever seen?",
-  "How can i help you?",
+  "How can I help you?",
   "Nice day!",
   "Glad to meet you.",
   "At your service",
@@ -46,6 +46,8 @@ function nextAgent() {
         "I am " + agentName + ", " + talks[~~(Math.random() * talks.length)]
       );
       agent.animate();
+      // testing out functions
+      agent.gestureAt(1, 1);
     };
     $(agent._el).click(() => speak());
     speak();
