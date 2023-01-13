@@ -944,10 +944,7 @@
   };
 
   var load = function load(name, successCb, failCb, base_path) {
-    base_path =
-      base_path ||
-      window.CLIPPY_CDN ||
-      "https://cdn.jsdelivr.net/gh/pi0/clippyjs/assets/agents/";
+    base_path = base_path || window.CLIPPY_CDN || "/agents/";
 
     var path = base_path + name;
     var mapDfd = load._loadMap(path);

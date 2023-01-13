@@ -12,6 +12,7 @@ var availableAgents = [
 ];
 
 var talks = [
+  "Isn't this simply the most HIDEOUS website you've ever seen?",
   "How can i help you?",
   "Nice day!",
   "Glad to meet you.",
