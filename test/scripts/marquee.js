@@ -1,9 +1,11 @@
 const marqueeImages = document.getElementById("images-marquee-container");
 const marqueeText = document.getElementById("marquee-text");
+const marqueeTabloids = document.getElementById("tabloids-marquee-container");
 const intervalFast = 4;
 const intervalSlow = 12;
 
 animate(marqueeImages, intervalSlow);
+animate(marqueeTabloids, intervalSlow);
 animate(marqueeText, intervalFast);
 
 function animate(element, interval) {

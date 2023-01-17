@@ -116,10 +116,7 @@
         y: 1,
       };
 
-      // y - 330 works on test-index.html
-      // y - 230 works okay when test-index.html appears in multiple iframes, but
-      // should probably change this for each page
-      this.position = { x: x + 65, y: y - 1650 };
+      this.position = { x: x + 20, y: y - 1920 };
 
       this.element = document.createElement("span");
       this.element.innerHTML = character;

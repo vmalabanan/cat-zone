@@ -6,13 +6,13 @@
 }
 
 a:hover {
-  cursor: url("../assets/images/cat-paw.gif"), auto;
+  cursor: url("../assets/images/cat-paw.gif") 15 35, auto;
 }
 
 body {
   height: 100vh;
   background-image: url("../assets/images/cat-glitch.gif");
-  cursor: url("../assets/images/cat-brown-small.gif"), auto;
+  cursor: url("../assets/images/cat-brown-small.gif") 45 40, auto;
 
   color: rgb(255, 0, 255);
   font-family: cursive;
@@ -30,28 +30,32 @@ header {
 .email-container {
   display: flex;
   flex-direction: column;
-  /* width: 30%; */
 }
 
-.email-me {
-  width: 50%;
-  align-self: center;
+.email-top img {
+  width: 30%;
+}
+
+#email-me {
+  display: flex;
+  justify-content: center;
 }
 
 .email-container,
 .guestbook-container,
 .footer-container {
-  /* background-image: url("../assets/images/bluesatin.gif"); */
   background-image: url("../assets/images/mosaic.jpg");
   opacity: 0.9;
-  /* border: 7px inset rgb(195, 255, 0); */
-  border: 7px inset rgb(255, 0, 255);
+  border: 7px inset rgb(195, 255, 0);
+  /* border: 7px inset rgb(255, 0, 255); */
   padding: 1rem 3rem;
 }
 
 .welcome-container,
 .quiz {
   background-image: url("../assets/images/bluesatin.gif");
+  /* background-image: url("../assets/images/tile-stars.gif"); */
+
   opacity: 0.9;
   /* border: 7px inset rgb(195, 255, 0); */
   border: 7px inset rgb(255, 0, 255);
@@ -81,20 +85,10 @@ header {
 
 .guestbook-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
-
-#images-marquee-container {
-  margin: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  width: 80vw;
-}
-
-/* .cat-piano {
-  width: 20%;
-} */
 
 .marquee {
   margin-top: 1rem;
@@ -118,6 +112,18 @@ header {
   float: left;
 }
 
+#tabloids-marquee-container {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100vw;
+}
+
+#tabloids-marquee-container img {
+  width: 12%;
+}
+
 h1 {
   font-size: 1.75rem;
   text-align: center;
@@ -136,9 +142,6 @@ main {
 }
 
 #cat-images-left {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 10%;
   height: 50%;
   opacity: 0.9;
@@ -176,9 +179,13 @@ ul {
   width: 80%;
 }
 
-/* .cat-tear {
-  height: 75%;
-} */
+#images-marquee-container {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 80vw;
+}
 
 footer {
   display: flex;
@@ -188,10 +195,13 @@ footer {
 }
 
 .not-frames {
+  width: 15%;
+}
+
+.not-frames a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 15%;
 }
 
 .footer-container {

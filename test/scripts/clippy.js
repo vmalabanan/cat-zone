@@ -1,21 +1,9 @@
 var availableAgents = [
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
-  // "Clippy",
+  "Links",
+  "Links",
+  "Links",
+  "Links",
+  "Links",
   "Links",
   "Links",
   "Links",
@@ -24,10 +12,12 @@ var availableAgents = [
 ];
 
 var talks = [
-  "Isn't this simply the most HIDEOUS website you've ever seen?",
-  "Sometimes I get a little lonely...",
-  "Would you like some assistance today?",
-  "On a scale of 1 to 5, you're a 10!",
+  "WARNING! WARNING! WARNING! YOU ARE INFECTED! The only cure? Catnip!",
+  "This is a stickup! You've been infected with the CatZone virus! Send catnip ASAP for the antidote!",
+  "Your computer has been infected! All your data are belong to us!",
+  "Your data will be released On-Line if You Do Not Pay...in catnip!",
+  "Uh-oh! Looks like you just lost all your data... Want it back? Send catnip!",
+  "Send catnip ASAP to 555-4321!",
   // "What did the paperclip say to the magnet? 'I find you very attractive.'",
   // "It looks like you're trying to write a letter. Would you like help?",
 ];
@@ -54,10 +44,7 @@ function nextAgent() {
 
     // On start
     agent.speak(
-      "Hi! I am " +
-        agentName +
-        ", your office assistant. " +
-        talks[~~(Math.random() * talks.length)]
+      "Uh-oh! You've just been infected with the CatZone virus! Your data is now ours... To release, send Bitcoin or catnip. Catnip preferred!"
     );
 
     // On click
