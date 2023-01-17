@@ -1,60 +1,79 @@
-.clippy,
-.clippy-balloon {
-  position: fixed;
-  z-index: 1000;
-  cursor: pointer;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.clippy-balloon {
-  background: #ffc;
-  color: black;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 5px;
+body {
+  /* background */
+  background-image: url("../images/clouds\ -\ bluer.jpg");
+  background-size: cover;
+
+  /* grid (frames) */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas:
+    "mail header header header header header header header header"
+    "clippy clippy placeholder1 merlin merlin placeholder2 rover rover rover"
+    "clippy clippy placeholder1 merlin merlin placeholder2 rover rover rover"
+    "placeholder3 bonzi bonzi merlin merlin links links placeholder4 placeholder4"
+    "placeholder3 bonzi bonzi merlin merlin links links placeholder4 placeholder4"
+    "placeholder3 escape escape escape escape escape safe safe safe";
+  height: 100vh;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-template-rows: repeat(6, 1fr);
 }
 
-.clippy-content {
-  max-width: 200px;
-  min-width: 120px;
-  font-family: "Microsoft Sans", sans-serif;
-  font-size: 10pt;
+#mail {
+  grid-area: mail;
+  /* width: 100%; */
+  /* grid-column: span 2; */
 }
 
-.clippy-tip {
-  width: 10px;
-  height: 16px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF///MAAAA////52QwgAAAAAN0Uk5T//8A18oNQQAAAGxJREFUeNqs0kEOwCAIRFHn3//QTUU6xMyyxii+jQosrTPkyPEM6IN3FtzIRk1U4dFeKWQiH6pRRowMVKEmvronEynkwj0uZJgR22+YLopPSo9P34wJSamLSU7lSIWLJU7NkNomNlhqxUeAAQC+TQLZyEuJBwAAAABJRU5ErkJggg==)
-    no-repeat;
-  position: absolute;
+#header {
+  grid-area: header;
 }
 
-.clippy-top-left .clippy-tip {
-  top: 100%;
-  margin-top: 0px;
-  left: 100%;
-  margin-left: -50px;
+#clippy {
+  grid-area: clippy;
 }
 
-.clippy-top-right .clippy-tip {
-  top: 100%;
-  margin-top: 0px;
-  left: 0;
-  margin-left: 50px;
-  background-position: -10px 0;
+#placeholder1 {
+  grid-area: placeholder1;
 }
 
-.clippy-bottom-right .clippy-tip {
-  top: 0;
-  margin-top: -16px;
-  left: 0;
-  margin-left: 50px;
-  background-position: -10px -16px;
+#rover {
+  grid-area: rover;
 }
 
-.clippy-bottom-left .clippy-tip {
-  top: 0;
-  margin-top: -16px;
-  left: 100%;
-  margin-left: -50px;
-  background-position: 0px -16px;
+#placeholder2 {
+  grid-area: placeholder2;
+}
+
+#bonzi {
+  grid-area: bonzi;
+}
+
+#merlin {
+  grid-area: merlin;
+}
+
+#links {
+  grid-area: links;
+}
+
+#placeholder3 {
+  grid-area: placeholder3;
+}
+
+#placeholder4 {
+  grid-area: placeholder4;
+}
+
+#escape {
+  grid-area: escape;
+}
+
+#safe {
+  grid-area: safe;
 }
