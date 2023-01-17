@@ -1,9 +1,10 @@
 // const mail = document.getElementById("mail");
 const welcome = document.getElementById("welcome");
+const meowMix = document.getElementById("meow-mix");
 // const im = document.getElementById("im");
-const meowMad = document.getElementById("meow-mad");
-const meowHungry = document.getElementById("meow-hungry");
-const meowPurr = document.getElementById("meow-purr");
+// const meowMad = document.getElementById("meow-mad");
+// const meowHungry = document.getElementById("meow-hungry");
+// const meowPurr = document.getElementById("meow-purr");
 
 // // play you've got mail on a delay
 // setTimeout(function () {
@@ -15,36 +16,28 @@ const meowPurr = document.getElementById("meow-purr");
 //   im.play();
 // }, 1500);
 
-// play meows
+// play meow mix jingle on a delay
 setTimeout(function () {
-  meowMad.play();
+  meowMix.play();
 }, 1000);
 
-setTimeout(function () {
-  meowHungry.play();
-}, 1700);
+// setTimeout(function () {
+//   meowHungry.play();
+// }, 1700);
 
-setTimeout(function () {
-  meowPurr.play();
-}, 2000);
+// setTimeout(function () {
+//   meowPurr.play();
+// }, 2300);
 
-// after an interval, repeat "welcome" and "you've got mail" sounds
-meowPurr.onended = function () {
+// after an interval, repeat "welcome" and meow mix sounds
+meowMix.onended = function () {
   this.currentTime = 0;
   const delay = setTimeout(function () {
     welcome.play();
     setTimeout(function () {
       // mail.play();
-      meowMad.play();
+      meowMix.play();
     }, 1000);
-    // setTimeout(function () {
-    //   meowHungry.play();
-    // }, 1500);
-
-    // setTimeout(function () {
-    //   meowPurr.play();
-    // }, 2000);
-
     clearTimeout(delay);
   }, 3000);
 };

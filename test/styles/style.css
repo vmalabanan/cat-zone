@@ -5,6 +5,10 @@
   overflow-x: hidden;
 }
 
+a:hover {
+  cursor: url("../assets/images/cat-paw.gif"), auto;
+}
+
 body {
   height: 100vh;
   background-image: url("../assets/images/cat-glitch.gif");

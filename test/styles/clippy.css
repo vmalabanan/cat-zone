@@ -2,8 +2,7 @@
 .clippy-balloon {
   position: fixed;
   z-index: 1000;
-  cursor: url("https://web.archive.org/web/20090830163219/http://geocities.com/byrddan/hand.gif"),
-    auto;
+  cursor: url("../assets/images/cat-paw.gif"), auto;
 }
 
 .clippy-balloon {
@@ -19,6 +18,7 @@
   min-width: 120px;
   font-family: "Microsoft Sans", sans-serif;
   font-size: 10pt;
+  font-weight: 400;
 }
 
 .clippy-tip {
