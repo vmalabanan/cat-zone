@@ -8,10 +8,10 @@ const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
 // play dial-up sound immediately and on a loop
 dialUp.loop = true;
 document.addEventListener(
-  "mouseover",
+  "click",
   () => {
     dialUp.play();
-    console.log("you moused over the document!");
+    console.log("you clicked the document!");
   },
   { once: true }
 );
