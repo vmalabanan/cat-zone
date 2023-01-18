@@ -8,9 +8,9 @@ const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
 // select play music button
 const playMusic = document.getElementById("play-music");
 
-// play bg music when button is pressed
+// play bg music when button is mousedover
 playMusic.addEventListener(
-  "click",
+  "mouseover",
   () => {
     // play on a loop
     dialUp.loop = true;
