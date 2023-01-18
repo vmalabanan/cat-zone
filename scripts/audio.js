@@ -1,9 +1,13 @@
-/* To play background audio */
-// selecting audio elements
-const welcome = document.getElementById("welcome");
-const meowMix = document.getElementById("meow-mix");
-const mail = document.getElementById("mail");
-const im = document.getElementById("im");
+// create new HTMLAudioElements
+const dialUp = new Audio("./assets/sounds/dial-up.flac");
+const welcome = new Audio("./assets/sounds/welcome.wav");
+const meowMix = new Audio("./assets/sounds/meow_mix_commercial.mp3");
+const im = new Audio("./assets/sounds/im.wav");
+const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
+
+// play dial-up sound immediately and on a loop
+dialUp.loop = true;
+dialUp.play();
 
 // play meow mix jingle on a delay
 setTimeout(function () {
