@@ -15,7 +15,6 @@ playMusic.addEventListener(
     // play on a loop
     dialUp.loop = true;
     dialUp.play();
-    console.log("you moused over the body!");
 
     // play meow mix jingle on a delay
     setTimeout(function () {

@@ -116,7 +116,7 @@
         y: 1,
       };
 
-      this.position = { x: x + 20, y: y - 1920 };
+      this.position = { x: x + 20, y: y - 1970 };
 
       this.element = document.createElement("span");
       this.element.innerHTML = character;
