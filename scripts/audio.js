@@ -7,11 +7,21 @@ const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
 
 // play dial-up sound immediately and on a loop
 dialUp.loop = true;
-document.addEventListener(
-  "click",
+// document.addEventListener(
+//   "click",
+//   () => {
+//     dialUp.play();
+//     console.log("you clicked the document!");
+//   },
+//   { once: true }
+// );
+
+const body = document.querySelector("body");
+body.addEventListener(
+  "mouseover",
   () => {
     dialUp.play();
-    console.log("you clicked the document!");
+    console.log("you moused over the body!");
   },
   { once: true }
 );
