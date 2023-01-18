@@ -6,8 +6,15 @@ const im = new Audio("./assets/sounds/im.wav");
 const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
 
 // play dial-up sound immediately and on a loop
+
 dialUp.loop = true;
-dialUp.play();
+document.addEventListener(
+  "mouseover",
+  () => {
+    dialUp.play();
+  },
+  { once: true }
+);
 
 // play meow mix jingle on a delay
 setTimeout(function () {
