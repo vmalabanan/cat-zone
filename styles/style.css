@@ -5,7 +5,8 @@
   overflow-x: hidden;
 }
 
-a:hover {
+a:hover,
+#play-music:hover {
   cursor: url("../assets/images/cat-paw.gif") 15 35, auto;
 }
 
@@ -108,6 +109,14 @@ header {
   white-space: nowrap;
   clear: both;
   float: left;
+}
+
+.play-music-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
 }
 
 #tabloids-marquee-container {

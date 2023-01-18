@@ -5,46 +5,40 @@ const meowMix = new Audio("./assets/sounds/meow_mix_commercial.mp3");
 const im = new Audio("./assets/sounds/im.wav");
 const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
 
-// play dial-up sound immediately and on a loop
-dialUp.loop = true;
-// document.addEventListener(
-//   "click",
-//   () => {
-//     dialUp.play();
-//     console.log("you clicked the document!");
-//   },
-//   { once: true }
-// );
+// select play music button
+const playMusic = document.getElementById("play-music");
 
-const body = document.querySelector("body");
-body.addEventListener(
-  "mouseover",
+// play bg music when button is pressed
+playMusic.addEventListener(
+  "click",
   () => {
+    // play on a loop
+    dialUp.loop = true;
     dialUp.play();
     console.log("you moused over the body!");
+
+    // play meow mix jingle on a delay
+    setTimeout(function () {
+      meowMix.play();
+    }, 1500);
+
+    // after meowMix has ended, repeat "welcome" and meow mix jingle
+    meowMix.onended = function () {
+      this.currentTime = 0;
+      const delay = setTimeout(function () {
+        welcome.play();
+        setTimeout(function () {
+          meowMix.play();
+        }, 1000);
+        clearTimeout(delay);
+      }, 3000);
+    };
   },
   { once: true }
 );
 
-// play meow mix jingle on a delay
-setTimeout(function () {
-  meowMix.play();
-}, 1000);
-
-// after meowMix has ended, repeat "welcome" and meow mix jingle
-meowMix.onended = function () {
-  this.currentTime = 0;
-  const delay = setTimeout(function () {
-    welcome.play();
-    setTimeout(function () {
-      meowMix.play();
-    }, 1000);
-    clearTimeout(delay);
-  }, 3000);
-};
-
-/* To get sound to play when you hover over one of the email me buttons */
-// selecting email "buttons"
+/* To get "you've got mail" sound to play when you hover over the email me "buttons" */
+// selecting "buttons"
 const catEnvelope = document.getElementById("cat-envelope");
 const catTrashcan = document.getElementById("cat-trashcan");
 const catMail = document.getElementById("cat-mail");
@@ -55,8 +49,8 @@ catTrashcan.addEventListener("mouseover", () => mail.play());
 catMail.addEventListener("mouseover", () => mail.play());
 emailMe.addEventListener("mouseover", () => mail.play());
 
-/* To get sound to play when you hover over one of the guestbook/no frames buttons */
-// selecting guestbook / frames "buttons"
+/* To get IM sound to play when you hover over one of the guestbook/no frames buttons */
+// selecting play music / guestbook / frames "buttons"
 const catOnBook = document.getElementById("cat-on-book");
 const signGuestbook = document.getElementById("sign-guestbook");
 const framesLeft = document.getElementById("frames-left");
@@ -66,3 +60,4 @@ catOnBook.addEventListener("mouseover", () => im.play());
 signGuestbook.addEventListener("mouseover", () => im.play());
 framesLeft.addEventListener("mouseover", () => im.play());
 framesRight.addEventListener("mouseover", () => im.play());
+playMusic.addEventListener("mouseover", () => im.play());
