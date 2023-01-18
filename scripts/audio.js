@@ -6,12 +6,12 @@ const im = new Audio("./assets/sounds/im.wav");
 const mail = new Audio("./assets/sounds/youve-got-mail.mp3");
 
 // play dial-up sound immediately and on a loop
-
 dialUp.loop = true;
 document.addEventListener(
   "mouseover",
   () => {
     dialUp.play();
+    console.log("you moused over the document!");
   },
   { once: true }
 );
