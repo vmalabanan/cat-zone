@@ -16,7 +16,7 @@ body {
   cursor: url("../assets/images/cat-brown-small.gif") 45 40, auto;
 
   color: rgb(255, 0, 255);
-  font-family: cursive;
+  font-family: "Babylonica", sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -132,12 +132,12 @@ header {
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -159,10 +159,10 @@ main {
 .quiz {
   margin-left: 2rem;
   width: 75%;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: rgb(195, 255, 0);
   /* color: rgb(255, 0, 255); */
-  font-family: fantasy;
+  font-family: "Are You Serious", sans-serif;
 }
 
 ul {
