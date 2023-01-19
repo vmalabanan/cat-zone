@@ -35,6 +35,7 @@ main {
 }
 
 #back {
+  background-color: magenta;
   align-self: center;
   height: 6%;
 }
