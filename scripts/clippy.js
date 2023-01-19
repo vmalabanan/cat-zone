@@ -18,8 +18,6 @@ var talks = [
   "Your data will be released On-Line if You Do Not Pay...in catnip!",
   "Uh-oh! Looks like you just lost all your data... Want it back? Send catnip!",
   "Send catnip ASAP to 555-4321!",
-  // "What did the paperclip say to the magnet? 'I find you very attractive.'",
-  // "It looks like you're trying to write a letter. Would you like help?",
 ];
 
 const randPos = () => 0.2 + Math.random() * 0.6;
