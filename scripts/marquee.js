@@ -1,23 +1,19 @@
-const marqueeImages = document.getElementById("images-marquee-container");
-const marqueeText = document.getElementById("marquee-text");
-const marqueeTabloids = document.getElementById("tabloids-marquee-container");
-const intervalFast = 4;
-const intervalSlow = 12;
-
-animate(marqueeImages, intervalSlow);
-animate(marqueeTabloids, intervalSlow);
-animate(marqueeText, intervalFast);
-
-function animate(element, interval) {
+function animate(element, interval, direction) {
   let elementWidth = element.offsetWidth;
   let parentWidth = element.parentElement.offsetWidth;
   let flag = 0;
 
   setInterval(() => {
-    element.style.marginLeft = --flag + "px";
-
-    if (elementWidth == -flag) {
-      flag = parentWidth;
+    if (direction.toLowerCase() === "left") {
+      element.style.marginLeft = --flag + "px";
+      if (elementWidth == -flag) {
+        flag = parentWidth;
+      }
+    } else {
+      element.style.marginLeft = ++flag + "px";
+      if (elementWidth == flag) {
+        flag = -parentWidth;
+      }
     }
   }, interval);
 }

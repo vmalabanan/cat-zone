@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../assets/images/construction/under_construction.gif");
+  cursor: url("../assets/images/construction/cat-mouse-pointer.jpg") 45 40, auto;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#top,
+#bottom {
+  display: flex;
+  gap: 1rem;
+  width: 100vw;
+  margin: 3rem 0;
+}
+
+#top {
+  margin-bottom: 2rem;
+}
+
+.broken {
+  width: 15%;
+}
+
+#back {
+  align-self: center;
+  height: 6%;
+}
+
+a:hover {
+  cursor: url("../assets/images/construction/paw.gif") 45 40, auto;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flash-fast {
+  animation: blink 0.75s;
+  animation-iteration-count: infinite;
+}
+
+.flash-medium {
+  animation: blink 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.flash-slow {
+  animation: blink 2.5s;
+  animation-iteration-count: infinite;
+}
