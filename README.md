@@ -4,3 +4,9 @@ CatZone - My entry for Tech Elevator's Ugly Website Contest... featuring throwba
 Best experienced live! 
 
 [![A gif showing Cat Zone's amazing design sense](https://github.com/vmalabanan/ugly-website-contest/blob/main/screen-capture.gif)](https://cat-zone.netlify.app/)
+
+-------------------
+
+UPDATE: Won 1st place! Here's what one judge said: "It's the ugliest website I've seen all year!"
+
+-------------------
