@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: red;
+  background-image: url("../assets/images/old/yellow-sparkles.gif");
+}
+
+.new-and-improved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.new {
+  width: 20%;
+}
+
+.viewing-old-site,
+.click-here-new-and-improved-no-frames-container,
+.no-frames-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+#cat-walker,
+#cat-cane {
+  width: 8%;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.viewing-old-site h1 {
+  animation: blink 0.75s;
+  animation-iteration-count: infinite;
+}
+
+.click-here {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 20%;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: brown;
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+}
+
+.new {
+  width: 30%;
+}
+
+.improved {
+  width: 20%;
+}

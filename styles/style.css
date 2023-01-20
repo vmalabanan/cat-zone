@@ -15,7 +15,7 @@ body {
   background-image: url("../assets/images/cat-glitch.gif");
   cursor: url("../assets/images/cat-brown-small.gif") 45 40, auto;
 
-  color: rgb(255, 0, 255);
+  color: rgb(195, 255, 0);
   font-family: "Babylonica", sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
@@ -69,6 +69,21 @@ header {
   gap: 0.5rem;
 }
 
+.new-and-improved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.new {
+  width: 20%;
+}
+
+.no-frames {
+  background-color: green;
+}
+
 .catzone {
   display: flex;
   align-items: center;
@@ -98,13 +113,13 @@ header {
 .marquee-bg {
   border: 7px inset rgb(255, 0, 255);
   background: yellow;
-
   width: 35%;
   height: 3rem;
   overflow: hidden;
 }
 
 #marquee-text {
+  color: rgb(255, 0, 255);
   text-transform: uppercase;
   white-space: nowrap;
   clear: both;

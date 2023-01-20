@@ -1,0 +1,25 @@
+body {
+  background-image: url("../assets/images/dummy/panther-eyes.gif");
+  color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  animation: blink 0.5s;
+  animation-iteration-count: infinite;
+}

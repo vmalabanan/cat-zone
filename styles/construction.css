@@ -34,10 +34,20 @@ main {
   width: 15%;
 }
 
+.ad {
+  align-self: center;
+  height: 65%;
+}
+
+.dollar {
+  align-self: center;
+  height: 75%;
+}
+
 #back {
   background-color: magenta;
   align-self: center;
-  height: 6%;
+  height: 7%;
 }
 
 a:hover {

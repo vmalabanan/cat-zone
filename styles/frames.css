@@ -12,68 +12,66 @@ body {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
-    "mail header header header header header header header header"
-    "clippy clippy placeholder1 merlin merlin placeholder2 rover rover rover"
-    "clippy clippy placeholder1 merlin merlin placeholder2 rover rover rover"
-    "placeholder3 bonzi bonzi merlin merlin links links placeholder4 placeholder4"
-    "placeholder3 bonzi bonzi merlin merlin links links placeholder4 placeholder4"
-    "placeholder3 escape escape escape escape escape safe safe safe";
+    "cats old old old old old old old old"
+    "cats old old old old old old old old"
+    "cats2 cats2 cats3 cats4 cats4 cats5 cats6 cats6 cats6"
+    "cats7 cats8 cats8 cats4 cats4 cats9 cats9 cats10 cats10"
+    "cats7 cats8 cats8 cats4 cats4 cats9 cats9 cats10 cats10"
+    "cats7 cats11 cats11 cats11 cats11 cats11 cats12 cats12 cats12";
   height: 100vh;
   align-items: stretch;
   justify-items: stretch;
   grid-template-rows: repeat(6, 1fr);
 }
 
-#mail {
-  grid-area: mail;
-  /* width: 100%; */
-  /* grid-column: span 2; */
+#cats {
+  grid-area: cats;
 }
 
-#header {
-  grid-area: header;
+#old {
+  grid-area: old;
 }
 
-#clippy {
-  grid-area: clippy;
+#cats2 {
+  grid-area: cats2;
 }
 
-#placeholder1 {
-  grid-area: placeholder1;
+#cats3 {
+  grid-area: cats3;
 }
 
-#rover {
-  grid-area: rover;
+#cats6 {
+  grid-area: cats6;
 }
 
-#placeholder2 {
-  grid-area: placeholder2;
+#cats5 {
+  grid-area: cats5;
 }
 
-#bonzi {
-  grid-area: bonzi;
+#cats8 {
+  grid-area: cats8;
 }
 
-#merlin {
-  grid-area: merlin;
+#cats4 {
+  grid-area: cats4;
 }
 
-#links {
-  grid-area: links;
+#cats9 {
+  grid-area: cats9;
 }
 
-#placeholder3 {
-  grid-area: placeholder3;
+#cats7 {
+  grid-area: cats7;
 }
 
-#placeholder4 {
-  grid-area: placeholder4;
+#cats10 {
+  grid-area: cats10;
 }
 
-#escape {
-  grid-area: escape;
+#cats11 {
+  grid-area: cats11;
 }
 
-#safe {
-  grid-area: safe;
+#cats12 {
+  grid-area: cats12;
 }
