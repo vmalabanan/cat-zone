@@ -44,7 +44,8 @@ header {
 
 .email-container,
 .guestbook-container,
-.footer-container {
+.footer-container,
+.new-and-improved-no-frames-container {
   background-image: url("../assets/images/tile-psychedelic2.gif");
   background-size: 60%;
   opacity: 0.9;
@@ -53,6 +54,12 @@ header {
   padding: 1rem 3rem;
 }
 
+.welcome-new-improved-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 .welcome-container,
 .quiz {
   background-image: url("../assets/images/tile-stars.gif");
@@ -69,6 +76,15 @@ header {
   gap: 0.5rem;
 }
 
+.new-and-improved-no-frames-container {
+  color: rgb(255, 0, 255);
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .new-and-improved {
   display: flex;
   justify-content: center;
@@ -76,8 +92,14 @@ header {
   gap: 0.5rem;
 }
 
-.new {
-  width: 20%;
+.new,
+.improved {
+  width: 60%;
+}
+
+.and {
+  background-color: rgb(195, 255, 0);
+  width: 11rem;
 }
 
 .no-frames {
