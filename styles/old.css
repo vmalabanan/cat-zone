@@ -29,6 +29,10 @@ body {
   gap: 0.3rem;
 }
 
+.viewing-old-site {
+  margin: 1rem 0;
+}
+
 #cat-walker,
 #cat-cane {
   width: 8%;
